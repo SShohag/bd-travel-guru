@@ -1,0 +1,32 @@
+.place{
+    width: 100%;
+    height: auto;
+}
+.name{
+    color: white;
+    position: relative;
+    top:100px;
+}
+
+.place-btn{
+    float:left;
+    background-repeat: no-repeat;
+    width:200px;
+    height: 280px;
+    margin: 5px;
+}
+.button{
+  position: relative;
+  top: 200px;
+  left: 750px;
+}
+.detail{
+    position: fixed;
+    height: 250px;
+    width: 500px;
+    margin-top: 200px;
+    margin-left:150px;
+    border: 1px solid gray;
+    color: white;
+    
+}

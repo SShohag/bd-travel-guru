@@ -1,0 +1,19 @@
+.login-form input{
+    margin-top:30px;
+    padding:5px;
+    border:1px solid gray;
+    border-radius:5px;
+    width:300px;
+}
+.login-form{
+    margin-top: 10px;
+    border:1px solid lightgray;
+}
+.g-btn{
+    width: 42%;
+}
+
+.btn-logo{
+   height: 25px; 
+   width: 5%;
+}

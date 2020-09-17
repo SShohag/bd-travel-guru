@@ -1,0 +1,15 @@
+.header img{
+    width: 80px;
+    margin:5px;
+}
+.header nav{
+    position: relative;
+    left:75%;
+}
+.navBar{
+    position: fixed;
+}
+.header{
+    margin: 5px;
+    width:85%;   
+}
