@@ -31,15 +31,6 @@ const Login = () => {
     const location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
 
-    //handling response
-    const handleResponse = (res, redirect)=>{
-        setUser(res);
-        setLoggedInUser(res);
-        if ( redirect){
-            history.replace(from)
-        }
-    }
-    
     const googleSignIn = ()=>{
         handelGoogleSignIn()
         .then (res=>{
@@ -66,6 +57,15 @@ const Login = () => {
         .then ( res =>{
             handleResponse(res, false);
         })
+    }
+
+    //handling response
+    const handleResponse = (res, redirect)=>{
+        setUser(res);
+        setLoggedInUser(res);
+        if ( redirect){
+            history.replace(from);
+        }
     }
 
    //Handling from text with validation process
@@ -121,6 +121,8 @@ const Login = () => {
                 <br/>
                 <input type="submit" value={newUser ? 'Sign Up':'Sign In'}/>
             </form>
+            <br/>
+            <br/>
             <p style= {{color:'red'}} > {user.error} </p>
             {user.success && <p style= {{color:'green'}} > {newUser?'Sign Up':'Log In'} Successfully </p> }
 

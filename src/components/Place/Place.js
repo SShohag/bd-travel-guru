@@ -6,11 +6,10 @@ import './Place.css'
 const Place = (props) => {
     
     const [places, setPlaces] = useState({})
-  const { name, img,key} = props.place;
+    const { name, img,key} = props.place;
    //console.log(props);
-
-  const handleTour = (place)=>setPlaces(place);
-  console.log(places);
+  const handleTour = ()=>setPlaces(props.place);
+  
     
   return (
     <div className="place">
@@ -23,7 +22,7 @@ const Place = (props) => {
       
       <div className="button">
       
-            <button onClick={()=> handleTour(props.place) } className="place-btn" style={{backgroundImage:`url(${img})`,backgroundSize:"cover",backgroundPosition:"center"}}> <span className="name" >{name}</span> </button>
+            <button onClick={ ()=> handleTour(key)} className="place-btn" style={{backgroundImage:`url(${img})`,backgroundSize:"cover",backgroundPosition:"center"}}> <span className="name" >{name}</span> </button>
       
       </div>
       

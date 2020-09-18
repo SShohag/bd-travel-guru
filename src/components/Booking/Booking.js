@@ -34,30 +34,38 @@ const Booking = () => {
         backgroundPosition:"center",
         backgroundSize:"cover",
         width:"100%",
-        height:"650px",
-        position:"fixed"
+        position:"fixed",
+        height:'100%',
+        display:'flex',
+        
   }
 
     return (
         
        <div style={bookingStyle}>
+
+          <div className="details-container">
+            
+          </div>
            <div className="booking-container" >
                 <form className="ship-form" onSubmit={handleSubmit(onSubmit)}>
                     <input name="example" defaultValue="" ref={register} placeholder="Origin" />
                     <br/>
                     <input name="exampleRequired" ref={register({ required: true })} placeholder="Your Destination" />
-                    <br/>
-                    {errors.exampleRequired && <span className="error" >This field is required</span>}
-                </form>
-                <form className={classes.container} noValidate>
+                    <form className={classes.container} noValidate>
                     <TextField id="date"label="From"type="date"defaultValue="2017-05-24"
                     className={classes.textField}
                     InputLabelProps={{shrink: true,}}/>
                     <TextField id="date"label="To"type="date"defaultValue="2017-05-24"
                     className={classes.textField}
                     InputLabelProps={{shrink: true, }}/>
+                    </form>
+                    <input type="submit"/>
+                    <br/>
+                    {errors.exampleRequired && <span className="error" >This field is required</span>}
                 </form>
-                <Link to="/room" > <button> Start Booking </button> </Link>
+                
+                 <Link to="/room" ><button> Start Booking </button></Link>
             </div>
        </div>
 

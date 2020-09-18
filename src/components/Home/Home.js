@@ -2,13 +2,14 @@ import React from 'react';
 import './Home.css'
 import Place from '../Place/Place';
 import Background from "../../bgimage/background.png"
+import Header from '../Header/Header';
 
 const Home = () => {
     const homeStyle ={
         backgroundImage:`url(${Background})`,
-        backgroundRepeat:"no-repeat",
-        backgroundPosition:"center",
-        backgroundSize:"cover"
+        // backgroundRepeat:"no-repeat",
+        // backgroundPosition:"center",
+        // backgroundSize:"cover"
     }
     var place =[
         {"key":1, "category":"tourPlace", "name":"SHAJEAK", "details":"Sajek valley is known for its natural environment and is surrounded by mountains, dense forest, and grassland hill tracks. Many small rivers flow through the mountains among which the Kachalong and the Machalong are notable. On the way to Sajek valley, one has to cross the Mayni range and the Mayni river. The road to Sajek has high peaks and falls.", "img":"https://i.ibb.co/yVrBrdj/sajek.png"},
@@ -22,6 +23,7 @@ const Home = () => {
 
     return (
         <div className="home" style={homeStyle}>
+            
             {
             place.map(plc=> <Place key={plc.key} place={plc}></Place>)
             }

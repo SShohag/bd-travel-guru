@@ -12,12 +12,15 @@
     color:red;
 }
 .booking-container{
-   position: relative;
-   left: 70%;
-   top: 25%;
+    margin-top:150px;
+   width: 35%;
 }
 .booking-container button{
     width: 300px;
+
     
+}
+.details-container{
+    width: 65%;
 }
     
