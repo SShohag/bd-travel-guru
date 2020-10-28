@@ -25,9 +25,10 @@ This is an online Travel Agency and hotel booking application. User can be fixed
 - vs code
 - chrome dev tool
 <br />
+
 ### Visit this [Travel-Guru](https://bd-travel-guru.web.app/) application
 
-### Visit my [LinkedIn](https://www.linkedin.com/in/md-shohag-babu-2255a61b1/) Profile
+### Visit my [LinkedIn](https://www.linkedin.com/in/md-shohag-babu-2255a61b1/) profile
 
 
 ---
