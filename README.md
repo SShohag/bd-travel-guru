@@ -1,3 +1,37 @@
+# [BD-Travel-Guru-Online Hotel Booking Application](https://bd-travel-guru.web.app/)
+This is an online Travel Agency and hotel booking application. User can be fixed their date and place in this application. They can choose the staying room within reach. <br />
+
+## `Project Summery`
+- It’s an online hotel booking application for customers.
+- You can select your favorite place and booking by sign up or sign in with a google account.
+- You can also decide on your place and also fixed your staying date on this site. <br />
+
+## `Features`
+- **React**
+  - React-dom
+  - React-router-dom
+  - React-script
+  - React-hook-from
+  - React-Scripts
+  - React-bootstrap
+- **Javascript**
+- **Firebase**
+- **Bootstrap**
+- **Material UI**
+<br/>
+
+## `Tools are using this project`
+- Git
+- vs code
+- chrome dev tool
+<br />
+### Visit this [Travel-Guru](https://bd-travel-guru.web.app/) application
+
+### Visit my [LinkedIn](https://www.linkedin.com/in/md-shohag-babu-2255a61b1/) Profile
+
+
+---
+---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
